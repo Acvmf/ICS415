@@ -1,0 +1,43 @@
+body{
+        background-color: gray;
+}
+ 
+#canvas{
+        border-size:1px;
+        border-style: solid;
+}
+#myCanvas{
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-size:1px;
+        border-style: dashed;
+        border-color: #101010;
+        background-color: white;
+}
+ 
+form{
+        background-color: green;
+        text-align: right;
+        font-family: 'Tangerine', serif;
+        font-size: 24px;
+        padding: 15px;
+}
+ 
+#top{
+        text-align: center;
+        margin: auto;
+        border-style: solid;
+        color: red;
+        border-size: 3px;
+        border-color: aqua;
+        max-width: 25%;
+}
+ 
+#butts{
+        width: 40%;
+        margin: auto;
+        border-style: dotted;
+        border-size: 2px;
+        border-color: blue;
+}

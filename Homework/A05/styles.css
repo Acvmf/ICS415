@@ -1,0 +1,60 @@
+html{
+    height: 100%;
+}
+
+body{
+        background-color: gray;
+        height: 100%;
+}
+ 
+header{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+nav{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+#mane{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    height: 75%-100px;
+}
+
+#summary{
+    width: 25%;
+    height: 20%;
+    float: left;
+    font-style: italic;
+}
+
+#area{
+    width: 75%;
+    border-left-width: 1px;
+    border-left-color: black;
+    border-left-style: solid;
+    margin-left: 25%;
+    height: 25%;
+    font-family: 'Tangerine', serif;
+    font-size: 24px;
+    padding-bottom: 20%;
+}
+
+footer{
+    position: relative;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    height: 50px;
+}
