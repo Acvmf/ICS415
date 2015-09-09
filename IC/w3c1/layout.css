@@ -1,0 +1,22 @@
+body{
+        background-color: gray;
+}
+ 
+#header{
+ 
+}
+ 
+#nav{
+        border-bottom: 1px;
+        border-bottom-color: black;
+        border-bottom-style: solid;
+        padding-bottom: 5px;
+}
+ 
+#content{
+        font-family: 'Tangerine', serif;
+}
+ 
+#footer{
+        background-color: gray;
+}
