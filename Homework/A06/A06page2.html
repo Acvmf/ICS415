@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lexa's Sandbox</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="A06styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row page-header" id="header">
+			<div class="col-sm-4"><h3>Header</h3></div>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row" id="nav">
+			<div class="col-sm-1 col-md-1 col-lg-1">
+				<button type="button" class="btn btn-default">
+					<a href="A06.html">
+						Home
+					</a>
+				</button>
+			</div>
+
+			<div class="col-sm-1 col-md-1 col-lg-1">
+				<button type="button" class="btn btn-default">
+					<a href="A06page2.html">
+						Page 2
+					</a>
+				</button>
+			</div>
+
+			<div class="col-sm-1 col-md-1 col-lg-1">
+				<button type="button" class="btn btn-default">
+					<a href="A06page3.html">
+						Page 3
+					</a>
+				</button>
+			</div>
+			<div class="col-sm-9 col-md-9 col-lg-9"></div>
+		</div>
+
+		<div class="row" id="content">
+			<div class="col-lg-3 col-md-3" id="sidebar">
+				Sidebar<br>
+				This is my secondary page. It has some formatting differences in the Bootstrap grid.
+			</div>
+			<div class="col-lg-9 col-md-9" id="maincont">
+				Content<br>
+				The main difference on this page is in the Navigation bar. Each button is a different 1-wide column, as opposed to one column that's 3 wide.<br>
+				This causes the buttons to never jump to the next line and displace the content area, even when they cross size boundaries. However, when you expand and contract the window, the buttons start overlapping each other or spacing out strangely. I haven't yet decided whether this is preferable to the default.<br>
+			</div>
+		</div>
+		
+		<div class="panel panel-default" id="footer">
+			<div class="panel-body">
+				Background Image courtesy NASA ||
+				Copyright(C) Lexa Mink-Flacco from template by Cam Moore
+			</div>
+		</div>
+	</div>
+</body>
+</html>

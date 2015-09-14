@@ -1,0 +1,48 @@
+body{
+	background-image: url("http://apod.nasa.gov/apod/image/1312/colormoon_francsics_apod.jpg");
+}
+
+button{
+	float: left;
+	margin: 2px;
+}
+
+#header{
+	height: 25%;
+	border-style: solid;
+	border-color: gray;
+}
+
+#nav{
+	height: 50px;
+	border-style: dotted;
+	border-color: black;
+}
+
+#content{
+	border-style: solid;
+	border-color: gray;
+	background-color: white;
+}
+
+#sidebar{
+	border-style: solid;
+	border-color: yellow;
+	background-color: white;
+}
+
+#maincont{
+	border-style: solid;
+	border-color: yellow;
+}
+
+p{
+    font-family: 'Tangerine', serif;
+    font-size: 24px;
+}
+
+#footer{
+	border-style: solid;
+	border-color: green;
+	height: 50px;
+}

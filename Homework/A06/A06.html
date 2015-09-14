@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lexa's Sandbox</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="A06styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row page-header" id="header">
+			<div class="col-sm-4"><h3>Header</h3></div>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row" id="nav">
+			<div class="col-sm-3 col-md-3 col-lg-3">
+				<button type="button" class="btn btn-default">
+					<a href="A06.html">
+						Home
+					</a>
+				</button>
+				<button type="button" class="btn btn-default">
+					<a href="A06page2.html">
+						Page 2
+					</a>
+				</button>
+				<button type="button" class="btn btn-default">
+					<a href="A06page3.html">
+						Page 3
+					</a>
+				</button>
+			</div>
+			<div class="col-sm-9 col-md-9 col-lg-9"></div>
+		</div>
+
+		<div class="row" id="content">
+			<div class="col-lg-3 col-md-3" id="sidebar">
+				Sidebar<br>
+				This, my main page, is the landing page for my assignments at the moment. On this page, I discuss any problems and quirks these pages have in common. All 3 pages have the same layout.<br>I built this home page completely (excluding content), then copied it to make the other two pages and added their content. Therefore, all of the logistics of the pages should be identical.
+			</div>
+			<div class="col-lg-9 col-md-9" id="maincont">
+				Content<br>
+				This page has a few main problems. Some of them are known bugs, some of which cannot be fixed yet:<br>
+				<ul>
+					<li>The Navbar buttons act oddly and wrap unnecessarily at the boundaries between media sizes</li>
+					<li>Even though my css file is overriding the Bootstrap file for heights and borders, the height for the Header isn't applying</li>
+					<li>The Footer is moved slightly to the right, despite not being aligned or margined</li>
+					<li>The borders are ugly as all hell, but they're useful for now</li>
+					<li>The Navbar pushes into the Sidebar when it's in Medium size - need to fix this if possible but you did say in class to not worry about it yet</li>
+					<li>Still have to find a background image that doesn't require white boxes under the text. Why is that a requirement?</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="panel panel-default" id="footer">
+			<div class="panel-body">
+				Background Image courtesy NASA ||
+				Copyright(C) Lexa Mink-Flacco from template by Cam Moore
+			</div>
+		</div>
+	</div>
+</body>
+</html>
