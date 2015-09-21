@@ -6,20 +6,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-		function gotoForm(){
-			window.location.href="demo-form.html";
-		}
-		function gotoProcess(){
-			window.location.href="A07.html";
-		}
-		function getClasses(elem){
-			var classes = elem.className;
-			return classes;
-		}
-		function addClass (elem, className) {
-			var d =document.getElementById('elem');
-			d.classList.add("className");
-		}
 		function validateForm () {
 			//prep error string
 			var errors = "";
@@ -54,7 +40,6 @@
 				errors += "Passwords do not match; ";
 			}
 			document.getElementById('warning').innerHTML=errors;
-
 		}
 	</script>
 </head>
@@ -65,7 +50,7 @@
 			<div class="col-md-10" id="warning">Warning goes here</div>
 		</div>
 		<div class="row" id="content">
-			<div class="col-sm-8" id="maincont">
+			<div class="col-sm-12" id="maincont">
 				<form name="myForm" action="demo_form.html" onsubmit="return validateForm()" method="get">
 					<div class="form-group">
 						<label for="username">User name: </label>
@@ -85,9 +70,6 @@
 					</div>
 					<input type="submit" value="Submit">
 				</form> 
-			</div>
-			<div class="col-sm-4" id="space">
-				
 			</div>
 		</div>
 	</div>
