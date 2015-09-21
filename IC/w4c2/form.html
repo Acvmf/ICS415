@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lexa's Sandbox</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="32layout.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+                function gotoForm(){
+                        window.location.href="w4c2form.html";
+                }
+                function gotoProcess(){
+                        window.location.href="w4c2process.html";
+                }
+        </script>
+</head>
+<body>
+        <div class="container-fluid">
+                <div class="row page-header" id="header">
+                        <div class="col-md-2"><h3>Header</h3></div>
+                        <div class="col-md-10"></div>
+                </div>
+                <div class="row" id="nav">
+                        <div class="col-sm-3">
+                                <button type="button" class="btn btn-default" onclick="gotoForm()">Form.html</button>
+                                <button type="button" class="btn btn-default" onclick="gotoProcess()">Process.html</button>
+                        </div>
+                        <div class="col-sm-9"></div>
+                </div>
+                <div class="row" id="content">
+                        <div class="col-sm-4" id="sidebar">
+                               
+                                This page contains a form in which the user inputs a name, address and phone number. These are directed to another page, Process, which displays them.
+ 
+                        </div>
+                        <div class="col-sm-8" id="maincont">
+                                <form name="myForm" action="w4c2process.html" method="get">
+                                        <div class="form-group">
+                                                <label for="username">User name: </label>
+                                                <input type="text" name="name" id="username">
+                                        </div>
+                                        <div class="form-group">
+                                                <label for="address">Address: </label>
+                                                <input type="text" name="address" id="address">
+                                        </div>
+                                        <div class="form-group">
+                                                <label for="phone">Phone Number: </label>
+                                                <input type="text" name="phone" id="phone">
+                                        </div>
+                                        <input type="submit" value="Submit">
+                                </form>
+                        </div>
+                </div>
+                <div class="panel panel-default" id="footer">
+                        <div class="panel-body">Footer</div>
+                </div>
+        </div>
+</body>
+</html>

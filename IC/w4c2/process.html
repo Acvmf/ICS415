@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lexa's Sandbox</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="32layout.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+                function gotoForm(){
+                        window.location.href="w4c2form.html";
+                }
+                function gotoProcess(){
+                        window.location.href="w4c2process.html";
+                }
+                function getQueryVariable(variable){
+                        var query = window.location.search.substring(1);
+                        var vars = query.split("&");
+                        for (var i=0;i<vars.length;i++) {
+                                var pair = vars[i].split("=");
+                                if(pair[0] == variable){return pair[1];}
+                        }
+                        return(false);
+                }//from https://css-tricks.com/snippets/javascript/get-url-variables/ (unmodified)
+                function fillForm() {
+                       
+                        var addressstring = getQueryVariable('address');
+                        var phonestring = getQueryVariable('phone');
+                        document.getElementById('adrss').innerHTML=addressstring;
+                        document.getElementById('phne').innerHTML=phonestring;
+                }
+                function fillUs(){
+                        var usernamestring = getQueryVariable('name');
+                        document.getElementById('usrnm').innerHTML=usernamestring;
+                }
+                function coverUs(){
+                        document.getElementById('usrnm').innerHTML='********';
+                }
+        </script>
+</head>
+<body>
+        <div class="container-fluid">
+                <div class="row page-header" id="header">
+                        <div class="col-md-2"><h3>Header</h3></div>
+                        <div class="col-md-10"></div>
+                </div>
+                <div class="row" id="nav">
+                        <div class="col-sm-3">
+                                <button type="button" class="btn btn-default" onclick="gotoForm()">Form.html</button>
+                                <button type="button" class="btn btn-default" onclick="gotoProcess()">Process.html</button>
+                        </div>
+                        <div class="col-sm-9"></div>
+                </div>
+                <div class="row" id="content">
+                        <div class="col-sm-4" id="sidebar">
+                               
+                                This page takes data entered on Forms and displays it in a table. The data includes a username, address, and phone number.
+ 
+                        </div>
+                        <div class="col-sm-8" id="maincont">
+                                <table border="1px">
+                                        <tr>
+                                                <td>
+                                                        <button type="button" class="btn btn-default" onclick="fillForm()">Display Info</button>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>Username: </td>
+                                                <td><p id="usrnm" onmouseover="fillUs()" onmouseout="coverUs()">********</p></td>
+                                        </tr>
+                                        <tr>
+                                                <td>Address: </td>
+                                                <td><p id="adrss">********</p></td>
+                                        </tr>
+                                        <tr>
+                                                <td>Phone: </td>
+                                                <td><p id="phne">********</p></td>
+                                        </tr>
+                                </table>
+                        </div>
+                </div>
+                <div class="panel panel-default" id="footer">
+                        <div class="panel-body">Footer</div>
+                </div>
+        </div>
+</body>
+</html>
