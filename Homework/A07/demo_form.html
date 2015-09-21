@@ -23,38 +23,37 @@
 		function validateForm () {
 			//prep error string
 			var errors = '';
-			//check all fields for entries
-			//if username is problematic, add usernamebad div
+			//if username is problematic, add to string
 			var x = document.forms["myForm"]["username"].value;
 			if (x == null || x == ""){
 				document.getElementById('username').style.color = "red";
-				errors += "Username not defined; "
+				errors += "Username not defined; ";
 			}
-			//if email is problematic, add emailbad div
+			//if email is problematic, add to string
 			x = document.forms["myForm"]["email"].value;
 			if (x == null || x == ""){
 				document.getElementById('email').style.color = "red";
-				errors += "Email not defined; "
+				errors += "Email not defined; ";
 			}
-			//if password is problematic, add passwordbad div
+			//if password is problematic, add to string
 			x = document.forms["myForm"]["password"].value;
 			if (x == null || x == ""){
 				document.getElementById('password').style.color = "red";
-				errors += "Password not defined; "
+				errors += "Password not defined; ";
 			}
-			//if confirm is problematic, add confirmbad div
+			//if confirm is problematic, add to string
 			x = document.forms["myForm"]["confirm"].value;
 			if (x == null || x == ""){
 				document.getElementById('confirm').style.color = "red";
-				errors += "Password confirmation not defined; "
+				errors += "Password confirmation not defined; ";
 			}
 			//check password and confirm are identical
 			var y = document.forms["myForm"]["password"].value;
 			if(y != x){
-			//if they aren't, add passnotmatch div
-				errors += "Passwords do not match; "
+			//if they aren't, add to string
+				errors += "Passwords do not match; ";
 			}
-			document.getElementById('warning').innerHTML= errors;
+			document.getElementById('warning').innerHTML=errors;
 
 		}
 	</script>
