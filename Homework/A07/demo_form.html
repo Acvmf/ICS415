@@ -14,32 +14,38 @@
 			if (x == null || x == ""){
 				document.getElementById('username').style.color = "red";
 				errors += "Username not defined; ";
+				return false;
 			}
 			//if email is problematic, add to string
 			x = document.forms["myForm"]["email"].value;
 			if (x == null || x == ""){
 				document.getElementById('email').style.color = "red";
 				errors += "Email not defined; ";
+				return false;
 			}
 			//if password is problematic, add to string
 			x = document.forms["myForm"]["password"].value;
 			if (x == null || x == ""){
 				document.getElementById('password').style.color = "red";
 				errors += "Password not defined; ";
+				return false;
 			}
 			//if confirm is problematic, add to string
 			x = document.forms["myForm"]["confirm"].value;
 			if (x == null || x == ""){
 				document.getElementById('confirm').style.color = "red";
 				errors += "Password confirmation not defined; ";
+				return false;
 			}
 			//check password and confirm are identical
 			var y = document.forms["myForm"]["password"].value;
 			if(y != x){
 			//if they aren't, add to string
 				errors += "Passwords do not match; ";
+				return false;
 			}
 			document.getElementById('warning').innerHTML=errors;
+			return true;
 		}
 	</script>
 </head>
