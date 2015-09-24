@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lexa's Sandbox</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+                $(document).ready(function(){
+                        $("#sidebar").click(function(){
+                                $("#content").hide();
+                        });
+                        $("#footer").mouseenter(function(){
+                                $("#content").show();
+                        });
+                        $("button").click(function(){
+                                document.getElementById('maincont').innerHTML="";
+                                $("#maincont").load("http://www.google.com #hplogo");
+                        });
+                });
+        </script>
+</head>
+<body>
+        <div class="container-fluid">
+                <div class="row page-header" id="header">
+                        <div class="col-md-2"><h3>Header</h3></div>
+                        <div class="col-md-10"><button>Click me</button></div>
+                </div>
+                <div class="row" id="content">
+                        <div class="col-sm-6" id="sidebar">
+                                When you click on the button, you should see the current Google Doodle!
+ 
+                        </div>
+                        <div class="col-sm-6" id="maincont">
+                                This is placeholder content that you can read while you're debugging, because Google doesn't seem to be serving up their page in a way that this code can read, so you'll see this a lot.
+                        </div>
+                </div>
+                <div class="panel panel-default" id="footer">
+                        <div class="panel-body">Footer</div>
+                </div>
+        </div>
+</body>
+</html>
