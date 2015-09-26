@@ -1,0 +1,19 @@
+$(document).ready(function(){
+	$(".answer").hide();
+	$("#one").click(function(){
+		$("#1").toggle();
+		$("#one").
+	});
+	$("#two").click(function(){
+		$("#2").toggle();
+	});
+	$("#three").click(function(){
+		$("#3").toggle();
+	});
+	$("#four").click(function(){
+		$("#4").toggle();
+	});
+	$("#five").click(function(){
+		$("#5").toggle();
+	});
+});
