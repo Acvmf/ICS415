@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lexa's Sandbox</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="myScript.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row page-header" id="header">
+			<div class="col-md-2"><h3>Header</h3></div>
+			<div class="col-md-10"></div>
+		</div>
+		<div class="row" id="content">
+			<div class="col-sm-12" id="maincont">
+				<form name="myForm" action="demo_form.html" onsubmit="return validateForm()" method="get">
+					<div class="form-group">
+						<label for="confirm">Confirm Password: </label>
+						<input type="password" name="confirm" id="confirm">
+					</div>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+		<div class="panel panel-default" id="footer">
+			<div class="panel-body">Footer</div>
+		</div>
+	</div>
+</body>
+</html>
