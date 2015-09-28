@@ -22,3 +22,9 @@ $(document).ready(function(){
 		$("#5").toggle(400,document.getElementById('five').innerHTML="(+) 5. Isn't that impossible?")
 	});
 });
+
+function do_the_thing (url) {
+	$(var page).load("url")
+	var num = $page.('a[href]').length;
+	document.getElementById('foo').innerHTML=num;
+}

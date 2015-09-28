@@ -14,8 +14,10 @@
 			<div class="col-md-10"></div>
 		</div>
 		<div class="row" id="content">
-			<div class="col-sm-12" id="maincont">
-				<form name="myForm" action="demo_form.html" onsubmit="return validateForm()" method="get">
+			<div class="col-sm-12" id="maincont" align="center">
+				Number of links in the given URL, defined by the number of "a href"s present:<br>
+				<p id="foo"></p>
+				<form name="myForm" action="demo_form.html" onsubmit="return do_the_thing(URL)" method="get">
 					<div class="form-group">
 						<label for="URL">URL input: </label>
 						<input type="url" name="URL" id="URL">
