@@ -24,7 +24,8 @@ $(document).ready(function(){
 });
 
 function do_the_thing (url) {
-	$(var page).load("url")
-	var num = $page.('a[href]').length;
+	$("#foo").load("url");
+	//blank paragraph now holds the url's content
+	var num = foo.links.length;
 	document.getElementById('foo').innerHTML=num;
 }

@@ -15,15 +15,15 @@
 		</div>
 		<div class="row" id="content">
 			<div class="col-sm-12" id="maincont" align="center">
-				Number of links in the given URL, defined by the number of "a href"s present:<br>
-				<p id="foo"></p>
-				<form name="myForm" action="demo_form.html" onsubmit="return do_the_thing(URL)" method="get">
+				<form name="myForm" action="URLcall.html" onsubmit="return do_the_thing(URL)" method="get">
 					<div class="form-group">
 						<label for="URL">URL input: </label>
-						<input type="url" name="URL" id="URL">
+						<input type="text" name="URL" id="URL">
 					</div>
 					<input type="submit" value="Submit">
 				</form>
+				Number of links in the given URL, defined by the number of "a" (hyperlink) tags present:<br>
+				<p id="foo"></p>
 			</div>
 		</div>
 		<div class="panel panel-default" id="footer">
@@ -33,4 +33,3 @@
 </body>
 </html>
 
-Create another Bootstrap HTML page with an input form with a URL input field and a submit button. When the button is pressed it calls a jQuery function from myScript.js that gets the URL and counts the number of links in the page. Show the result below the the input form.
